@@ -25,10 +25,15 @@
     "react-dom": "19.0.0",
     "react-redux": "^9.2.0",
     "react-router": "^7.1.0",
+    "solana-client": "*",
     "sonner": "^1.7.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
+    "@nx/js": "20.3.0",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
     "@types/node": "^22.10.2",
     "@types/react": "19.0.0",
     "@types/react-dom": "19.0.0",

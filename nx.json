@@ -19,6 +19,20 @@
       "cache": true
     }
   },
+  "plugins": [
+    {
+      "plugin": "@nx/js/typescript",
+      "options": {
+        "typecheck": {
+          "targetName": "tsc:typecheck"
+        },
+        "build": {
+          "targetName": "tsc:build",
+          "configName": "tsconfig.lib.json"
+        }
+      }
+    }
+  ],
   "release": {
     "projects": [
       "packages/solana-client"

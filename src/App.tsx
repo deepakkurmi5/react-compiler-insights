@@ -1,8 +1,11 @@
-import ApplicationRouter from '@/navigation/application.router';
+import { useEffect } from 'react';
+import { addFn } from 'solana-client';
 
+import ApplicationRouter from '@/navigation/application.router';
 import { checkAuth } from '@/features/authentication/auth-slice';
 import { useAppDispatch } from './redux/hook';
-import { useEffect } from 'react';
+
+console.log(addFn(3));
 
 function App() {
   const dispatch = useAppDispatch();
