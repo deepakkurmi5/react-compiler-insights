@@ -18,5 +18,10 @@
     "typecheck": {
       "cache": true
     }
+  },
+  "release": {
+    "projects": [
+      "packages/solana-client"
+    ]
   }
 }
