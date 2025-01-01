@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router';
 import { Spinner } from '@nextui-org/react';
 
@@ -6,8 +6,8 @@ import { RoutesConfig } from '@/navigation/routes.config';
 import PrivateOutlet from '@/navigation/outlet/private-outlet';
 import PublicOutlet from '@/navigation/outlet/public-outlet';
 
-import Login from '@/pages/login';
-import Dashboard from '@/components/organisms/dashboard';
+const Login = lazy(() => import('@/pages/login'));
+const Dashboard = lazy(() => import('@/components/organisms/dashboard'));
 
 export default function ApplicationRouter() {
   return (
