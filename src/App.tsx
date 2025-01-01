@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { addFn } from 'solana-client';
+import { addFn } from 'solana-client-ts';
 
 import ApplicationRouter from '@/navigation/application.router';
 import { checkAuth } from '@/features/authentication/auth-slice';
